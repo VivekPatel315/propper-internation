@@ -35,6 +35,49 @@ $(document).ready(function() {
 		items: 1,
 		autoplay: true
 	})	
+
+
+	$('.owl-carousel.trusted-carousel').owlCarousel({
+		margin: 0,
+		loop: true,
+		dots: false,
+		items: 3,
+		autoplay: true,
+		responsive:{
+			0:{
+					items:1
+			},
+			768:{
+					items:2
+			},
+			1280:{
+					items:3
+			}
+    }
+	});
+
+	$('.owl-carousel.category-carousel').owlCarousel({
+		margin: 20,
+		loop: true,
+		dots: true,
+		nav: true,
+		items: 3,
+		autoplay: false,
+		loop: false,
+		responsive:{
+			0:{
+					items:1
+			},
+			768:{
+					items:2
+			},
+			1024:{
+					items:3
+			}
+    }
+	});
+
+	
 });
 
 $(window).on('scroll', function () {
