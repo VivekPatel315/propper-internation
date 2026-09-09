@@ -1,0 +1,159 @@
+.banner-section {
+  position: relative;
+  overflow: hidden
+}
+
+.banner-section.bg-cover {
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-position: center center
+}
+
+.banner-section .item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.banner-section .item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  background: linear-gradient(180deg, #000000, #29292900);
+}
+
+.banner-section .item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #000000, #29292900);
+  width: 100%;
+}
+
+.banner-content {
+  max-width: 800px;
+  color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  position: relative;
+  z-index: 1
+}
+
+.banner-content .h1 {
+  color: #fff;
+  line-height: 1.1em;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+} 
+
+.banner-content .banner-cta .button {
+  margin-top: 10px ;
+  min-width: 150px;
+  text-align: center; 
+} 
+
+.banner-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1
+}
+
+.owl-dots {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 10px;
+}
+
+.owl-dot {
+  width: 5px;
+  height: 30px;
+  background: #FFF !important;
+  opacity: 0.5;
+}
+
+.owl-dot.active {
+  opacity: 1;
+}
+
+@media(max-width:1439px) { 
+  .banner-content .h1 {
+    line-height: 1
+  }
+
+  .banner-content .banner-info ul.no-list {
+    padding-top: 70px
+  }
+}
+
+@media(max-width:1279px) {
+  .banner-content {
+    max-width: 700px
+  }
+
+  .banner-content .banner-info ul.no-list {
+    gap: 40px
+  }
+
+  .banner-content .banner-info ul.no-list li {
+    font-size: 14px
+  }
+}
+
+@media(max-width:1023px) {
+  .banner-content .h1 {
+    font-size: 52px;
+  }
+  
+  .banner-content .h3 {
+    font-size: 28px
+  }
+}
+
+@media(max-width:767px) {
+  .banner-content {
+    max-width: 100%;
+    padding-right: 40px;
+  } 
+
+  .banner-content .h1 {
+    font-size: 44px
+  }  
+
+  .banner-content .h3 {
+    font-size: 22px
+  }  
+
+  .banner-section .item:before {
+    background: #1b1b1b66;
+    width: 100%
+  }
+
+  .banner-section .item:after {
+    display: none;
+  }
+} 
