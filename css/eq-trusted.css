@@ -1,0 +1,18 @@
+.trusted-block {
+  padding: 30px 0;
+  border-bottom: 1px solid #EEEDEC;
+}
+
+.trusted-block img {
+  width: auto !important;
+  filter: brightness(0);
+  margin: 0 auto 10px;
+}
+
+.trusted-carousel .trusted-icon-line {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  font-family: 'Century Gothic';
+}

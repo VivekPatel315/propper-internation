@@ -1,0 +1,153 @@
+.benifit-card-section {
+  padding: 120px 0 110px
+}
+
+.benifit-card-section .label-txt {
+  margin: 0 0 10px
+}
+
+.benifit-card-descreption {
+  letter-spacing: -.01em;
+  color: #424140;
+  font-size: 16px;
+  max-width: 625px
+}
+
+.benifit-card-grid {
+  padding-top: 20px
+}
+
+.benifit-card-grid.owl-carousel {
+  padding-bottom: 80px
+}
+
+.benifit-card-block {
+  margin: 8px 0;
+  position: relative;
+  overflow: hidden;
+  display: block
+}
+
+.benifit-card-image img {
+  width: 100%;
+  transform: scale(1);
+  transition: all .3s linear 0s;
+  object-fit: cover;
+  height: 415px;
+}
+
+.benifit-card-image:hover img {
+  transition: all .3s linear 0s
+}
+
+.benifit-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #1b1b1b66;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px)
+}
+
+.benifit-card-icon {
+  border: 1px solid #F5F5F5
+}
+
+.benifit-card-info {
+  font-size: 16px;
+  color: #f5f5f5;
+  letter-spacing: -.01em;
+}
+
+.benifit-card-info h5 {
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.benifit-card-info p {
+  font-weight: 400
+}
+
+.category-carousel .owl-nav {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-carousel .owl-nav button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  filter: invert(1);
+  background: url('icon-arrow-right.svg') center center / cover no-repeat !important;
+}
+
+.category-carousel .owl-nav button.disabled {
+  opacity: 0.3;
+}
+
+.category-carousel .owl-nav button.owl-prev {
+  transform: scaleX(-1);
+}
+
+.category-carousel .owl-dots {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  right: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 3px;
+  align-items: center;
+  z-index: -1;
+}
+
+.category-carousel .owl-dots button.owl-dot {
+  flex: 1;
+  height: 2px;
+  background: #EEEDEC;
+}
+
+.category-carousel .owl-dots button.owl-dot.active {
+  background: #191C1F;
+}
+
+@media(max-width:1439px) {
+  .benifit-card-section {
+    padding: 80px 0;
+  }
+}
+
+@media(max-width:1279px) {
+  .benifit-card-image img {
+    height: 300px
+  }
+
+  .benifit-card-info h5 {
+    font-size: 18px;
+  }
+
+  .benifit-card-section .section-heading-block h2 br {
+    display: none
+  }
+} 
+
+@media(max-width:767px) {
+  .benifit-card-image img {
+    height: auto
+  }
+}
