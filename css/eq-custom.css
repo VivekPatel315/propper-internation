@@ -217,6 +217,39 @@ strong {
   color: #f2f4f5
 }
 
+.readmore-link a {  
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+}
+
+.readmore-link a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #FFF;
+  transition: all .15s linear 0s;
+}
+
+.readmore-link a:hover:before {
+  width: 0;
+  transition: all .15s linear 0s;
+}
+
+.readmore-link a::after {
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  background-image: url('icon-arrow-right.svg');
+}
+
 .align-h {
   display: flex;
   flex-wrap: wrap;
@@ -251,7 +284,7 @@ strong {
 }
 
 .form-control {
-	border: 1px solid #F5F5F5;
+	border: 1px solid #191c1f;
 	padding: 15px;
 	border-radius: 4px;
 	width: 100%;
@@ -351,35 +384,45 @@ strong {
   position: relative
 }
 
-.related-product-section.featured-product-section {
-  border-top: 1px solid #E7E8E9;
-  padding: 70px 0 100px
+.military-services {
+  padding: 120px 0 70px;
+  background-image: url('https://www.propper.com/media/wysiwyg/military/military-banner-new.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.related-product-title {
-  justify-content: space-between;
-  padding-bottom: 50px
+.military-services:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(178deg, rgb(22 90 125 / 45%) 0%, rgb(15 54 74 / 56%) 100%);
+  backdrop-filter: blur(1.9px);
 }
 
-.related-product-title h3 {
-  padding: 0
+.military-services-content {
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.related-product-title .see-all-btn {
-  background: transparent;
-  color: #191c1f;
-  padding: 14px 24px;
-  border-color: #777673
+.military-services-content h2 {
+  color: #FFF;
 }
 
-.related-product-title .see-all-btn:hover {
-  background: #4242421a
+.military-services-content .readmore-link a {
+  color: #FFF; 
 }
-
-.related-product-title .see-all-btn img.cta-arrow {
-  filter: invert(1);
-  transform: rotate(-45deg)
-} 
 
 @media(max-width:1439px) {
   .container {
@@ -423,6 +466,25 @@ strong {
   h5,
   .h5 {
     font-size: 20px
+  }
+
+  .readmore-link a {
+    font-size: 16px;
+  }
+
+  .military-services { 
+    padding: 50px 0;
+    min-height: 350px;
+    font-size: 16px;
+  }
+
+  .military-services-content h2 {
+    font-size: 38px;
+  }
+
+  .readmore-link a::after {
+    margin-left: 7px;
+    top: -2px;
   }
 }
 

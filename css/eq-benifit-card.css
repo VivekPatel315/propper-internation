@@ -37,6 +37,7 @@
 }
 
 .benifit-card-image:hover img {
+  transform: scale(1.1);
   transition: all .3s linear 0s
 }
 
