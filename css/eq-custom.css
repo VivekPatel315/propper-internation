@@ -124,7 +124,7 @@ h6,
 .h6 {
   font-family: Century Gothic;
   margin: 0 0 20px;
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: -.01em;
   color: #191c1f;
   font-weight: bold;
@@ -404,7 +404,7 @@ strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(178deg, rgb(22 90 125 / 45%) 0%, rgb(15 54 74 / 56%) 100%);
+  background: linear-gradient(178deg, rgb(22 90 125 / 55%) 0%, rgb(15 54 74 / 76%) 100%);
   backdrop-filter: blur(1.9px);
 }
 
@@ -422,6 +422,127 @@ strong {
 
 .military-services-content .readmore-link a {
   color: #FFF; 
+}
+
+.client-testimonials {
+  padding: 70px 0;
+}
+
+.testimonials-carousel {
+  margin-top: 50px;
+}
+
+.testimonial-content {
+  padding: 40px 20px 20px;
+  line-height: 1.3;
+  color: #191c1f;
+  letter-spacing: -.01em;
+}
+
+.testimonial-content > p {
+  position: relative;
+}
+
+.testimonial-content > p:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -15px;
+  width: 35px;
+  height: 27px;
+  background: url('quote.svg');
+  background-size: cover;
+}
+
+.testimonial-author .product-about {
+  margin: 0 0 5px;
+  font-size: 22px;
+}
+
+.testimonial-author {
+  border-top: 1px solid #d2d2d2;
+  padding-top: 20px;
+}
+
+.testimonial-author .author-name {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.testimonial-content img {
+  width: 100px !important;
+  margin-bottom: 20px;
+}
+
+.testimonials-carousel .owl-dots {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.testimonials-carousel .owl-dots .owl-dot {
+  width: 30px;
+  height: 3px;
+  background: #233d51;
+  opacity: 0.3;
+}
+
+.testimonials-carousel .owl-dots .owl-dot.active {
+  opacity: 0.8;
+}
+
+.block-overlay {
+  overflow: hidden;
+}
+
+.hover-link:hover + .block-img {
+  transform: scale(1.1);
+  transition: all .2s linear 0s;
+}
+
+.block-img {
+  position: relative;
+  transition: all .2s linear 0s;
+}
+
+.block-img:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(245.66deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.block-content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.block-content h5 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+}
+
+.block-content p {
+  margin: 0;
+}
+
+.block-content .button {
+  min-width: 200px;
+  text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 @media(max-width:1439px) {
@@ -478,6 +599,10 @@ strong {
     font-size: 16px;
   }
 
+  .military-services-content {
+    max-width: 800px;
+  }
+
   .military-services-content h2 {
     font-size: 38px;
   }
@@ -485,6 +610,65 @@ strong {
   .readmore-link a::after {
     margin-left: 7px;
     top: -2px;
+  }
+
+  .client-testimonials { 
+    padding: 50px 0;
+  }
+
+  .testimonials-carousel {
+    margin-top: 30px;
+  }
+
+  .testimonial-content {
+    padding: 30px 10px 10px;
+    font-size: 16px;
+  }
+
+  .testimonial-content > p {
+    margin: 0 0 10px;
+  }
+
+  .testimonial-content > p:before {
+    top: -30px;
+    left: -10px;
+    width: 26px;
+    height: 20px;
+  }
+
+  .testimonial-content img {
+    width: 90px !important;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-author {
+    padding-top: 15px;
+  }
+
+  .testimonial-author .product-about {
+    font-size: 18px;
+  }
+
+  .testimonial-author .author-name {
+    font-size: 14px;
+  }
+
+  .block-content {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    font-size: 16px;
+  }
+
+  .block-content h5 {
+    font-size: 24px;
+  }
+
+  .block-content .button {
+    min-width: 140px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
   }
 }
 
@@ -504,6 +688,12 @@ strong {
   .hidden-tab {
     display: none
   } 
+
+  .block-img img {
+    min-height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 @media(max-width:767px) {
@@ -563,5 +753,9 @@ strong {
 
   .visible-mobile-flex {
     display: flex
+  }
+
+  .home-block-cta .col {
+    flex: 0 0 100%;
   }
 }

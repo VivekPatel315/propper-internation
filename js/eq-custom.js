@@ -77,6 +77,32 @@ $(document).ready(function() {
     }
 	});
 
+	$('.owl-carousel.testimonials-carousel').owlCarousel({
+		margin: 20,
+		loop: false,
+		dots: true,
+		nav: false,
+		items: 3,
+		autoplay: false,
+		loop: true,
+		responsive:{
+			0:{
+					items:1,
+					autoplay: true
+			},
+			768:{
+					items:2,
+					autoplay: true
+			},
+			1024:{
+					items:3,
+					autoplay: false
+			}
+    }
+	});
+
+	
+
 	
 	var currentCategory = 0;
 	var totalCategories = $('.category-panel').length;
