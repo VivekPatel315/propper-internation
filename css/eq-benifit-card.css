@@ -1,5 +1,10 @@
 .benifit-card-section {
-  padding: 120px 0 110px
+  padding: 70px 0;
+}
+
+.benifit-card-block:hover,
+.product-card:hover {
+  transform: translateY(-4px);
 }
 
 .benifit-card-section .label-txt {
@@ -9,7 +14,7 @@
 .benifit-card-descreption {
   letter-spacing: -.01em;
   color: #424140;
-  font-size: 16px;
+  font-size: 18px;
   max-width: 625px
 }
 
@@ -129,7 +134,7 @@
 
 @media(max-width:1439px) {
   .benifit-card-section {
-    padding: 80px 0;
+    padding: 50px 0 50px;
   }
 }
 
@@ -140,6 +145,10 @@
 
   .benifit-card-info h5 {
     font-size: 18px;
+  }
+
+  .benifit-card-descreption {
+    font-size: 16px;
   }
 
   .benifit-card-section .section-heading-block h2 br {
